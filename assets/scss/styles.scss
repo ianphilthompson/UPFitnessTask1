@@ -1,0 +1,13 @@
+//Bootstrap (the whole thing to speed this up)
+
+@import "bootstrap/bootstrap.scss";
+
+//Global styles
+
+@import "global/variables";
+@import "global/mixins";
+
+
+//Partials
+
+@import "partial/layout";

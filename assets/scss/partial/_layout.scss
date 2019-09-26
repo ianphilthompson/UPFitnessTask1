@@ -1,0 +1,15 @@
+body {
+  margin:0;
+  .main-content {
+    margin:50px 0 0;
+    #album-holder {
+      margin:50px 0;
+      .album-cover {
+        height:0;padding-bottom:24%;background-size:cover;background-position:center center;background-repeat:no-repeat;
+      }
+    }
+  }
+  footer {
+    height:200px;background:$color-black;
+  }
+}
