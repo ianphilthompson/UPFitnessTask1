@@ -6,13 +6,19 @@ body {
       margin:50px 0;
       .album-cover {
         height:0;padding-bottom:100%;background-size:cover;background-position:center center;background-repeat:no-repeat;
-        @include max-screen($medium) {
+      }
+      @include min-screen($small) {
+        .album-cover {
           padding-bottom:50%;
         }
-        @include max-screen($large) {
+      }
+      @include min-screen($medium) {
+        .album-cover {
           padding-bottom:33%;
         }
-        @include max-screen($xlarge) {
+      }
+      @include min-screen($large) {
+        .album-cover {
           padding-bottom:25%;
         }
       }

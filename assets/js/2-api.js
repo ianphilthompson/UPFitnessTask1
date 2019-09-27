@@ -18,6 +18,7 @@ $(document).ready(function() {
         '<div class="col-12 col-sm-6 col-md-4 col-lg-3 album-cover" style="background-image:url('+ photoURL +')"></div>'
       )
     }
+    $('#loading').css('display','none');
   }
   getAPIResults();
 })
