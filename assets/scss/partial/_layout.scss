@@ -5,8 +5,10 @@ body {
     #album-holder {
       margin:50px 0;
       .album-cover {
+        // images being loaded in as background images, could also do it as a positioned div depending on design
         height:0;padding-bottom:100%;background-size:cover;background-position:center center;background-repeat:no-repeat;
       }
+      // adjust padding-bottom to maintain square aspect ratio on resize
       @include min-screen($small) {
         .album-cover {
           padding-bottom:50%;
@@ -25,6 +27,7 @@ body {
     }
   }
   footer {
+    // standard footer area
     height:200px;background:$color-black;
   }
 }
