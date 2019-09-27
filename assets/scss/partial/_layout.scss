@@ -5,7 +5,16 @@ body {
     #album-holder {
       margin:50px 0;
       .album-cover {
-        height:0;padding-bottom:24%;background-size:cover;background-position:center center;background-repeat:no-repeat;
+        height:0;padding-bottom:100%;background-size:cover;background-position:center center;background-repeat:no-repeat;
+        @include max-screen($medium) {
+          padding-bottom:50%;
+        }
+        @include max-screen($large) {
+          padding-bottom:33%;
+        }
+        @include max-screen($xlarge) {
+          padding-bottom:25%;
+        }
       }
     }
   }

@@ -10047,10 +10047,25 @@ body .main-content #album-holder {
 }
 body .main-content #album-holder .album-cover {
   height: 0;
-  padding-bottom: 24%;
+  padding-bottom: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  body .main-content #album-holder .album-cover {
+    padding-bottom: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  body .main-content #album-holder .album-cover {
+    padding-bottom: 33%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .main-content #album-holder .album-cover {
+    padding-bottom: 25%;
+  }
 }
 body footer {
   height: 200px;
